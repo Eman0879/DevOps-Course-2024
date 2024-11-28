@@ -6,4 +6,14 @@ This guide explains the step-by-step process of deploying a simple MERN applicat
 ## Prerequisites
 
 ### Install Required Tools
-1.
+1. Install Visual Studio Code (VS Code) for writing YAML files and managing code.
+2. Install Docker Desktop from the [offical website](https://docs.docker.com/desktop/setup/install/windows-install/).
+3. Install kubectl on windows using Chocolatey:
+   ```bash
+   choco install kubernetes-cli 
+   ```
+4. Install Minikube using Chocolatey:
+   ```bash
+   choco install minikube
+   ```
+   
