@@ -202,4 +202,18 @@ kubectl get pods
 ```
 ![getPods](https://github.com/user-attachments/assets/bf278dd3-780b-443b-a0f9-85b7c2d4c058)
 
+### Step 10: Verify Services
+Check the services running in your cluster:
 
+```bash 
+kubectl get svc
+
+```
+
+### Step 10: Verify Services
+Expose the web application:
+
+```bash
+minikube service webapp-service
+```
+This will open the Mongo-Express app in your browser.The webpage will prompt for a username and password because we have used the latest tag of the mongo-express image that comes a default username and password. The username and password is: admin and pass.
