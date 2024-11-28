@@ -211,13 +211,20 @@ kubectl get svc
 
 ```
 
+![svc](https://github.com/user-attachments/assets/4ab446c2-05fe-4993-94e4-0d8244b23290)
+
+
 ### Step 11: Access the Application
 Expose the web application:
 
 ```bash
 minikube service webapp-service
 ```
+![Dep2](https://github.com/user-attachments/assets/cf8482a6-ee17-455a-93ac-f3f97b842a34)
+
 This will open the Mongo-Express app in your browser.The webpage will prompt for a username and password because we have used the latest tag of the mongo-express image that comes a default username and password. The username and password is: admin and pass.
+
+![webpage](https://github.com/user-attachments/assets/6a6425f9-4ceb-4f30-8b26-6c13934d811d)
 
 ### Success 
 After successfully logging into Mongo-Express, you should see the web interface to manage your MongoDB instance. Congratulations, you've deployed a simple MERN application using Kubernetes!
