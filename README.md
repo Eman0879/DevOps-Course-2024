@@ -57,6 +57,7 @@ data:
 ### Step 3: Create MongoDB Deployment 
 Create a mongo-app.yaml file for MongoDB deployment. Kubernetes Deployments manage Pods and ReplicaSets, ensuring scalability and availability.
 We are using the environment variables ME_CONFIG_MONGODB_ADMINUSERNAME and ME_CONFIG_MONGODB_ADMINPASSWORD given on the docker hub for the official docker image of mongo. 
+
 Reference the secret created in Step 1 for MongoDB credentials. For example:
 
 ```bash
@@ -210,10 +211,14 @@ kubectl get svc
 
 ```
 
-### Step 10: Verify Services
+### Step 11: Access the Application
 Expose the web application:
 
 ```bash
 minikube service webapp-service
 ```
 This will open the Mongo-Express app in your browser.The webpage will prompt for a username and password because we have used the latest tag of the mongo-express image that comes a default username and password. The username and password is: admin and pass.
+
+### Success 
+After successfully logging into Mongo-Express, you should see the web interface to manage your MongoDB instance. Congratulations, you've deployed a simple MERN application using Kubernetes!
+
