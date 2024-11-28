@@ -200,6 +200,6 @@ Check the status of Pods to ensure everything is running:
 ```bash
 kubectl get pods
 ```
-
+![getPods](https://github.com/user-attachments/assets/bf278dd3-780b-443b-a0f9-85b7c2d4c058)
 
 
