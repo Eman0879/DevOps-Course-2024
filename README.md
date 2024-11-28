@@ -117,8 +117,8 @@ spec:
 
 ### Step 5: Create Mongo-Express Deployment 
 Write a web-app.yaml file for deploying the Mongo-Express app. Mongo-Express is a web-based interface for managing MongoDB.In this yaml file everything is similar to mongo-app.yaml except that this will also contain information for the nodeport.
-In this file we are going to use the environment variables given on docker hub for the official image of mongo-express ME_CONFIG_MONGODB_ADMINUSERNAME 
-And  ME_CONFIG_MONGODB_ADMINPASSWORD.
+In this file we are going to use the environment variables given on docker hub for the official image of mongo-express, which are ME_CONFIG_MONGODB_ADMINUSERNAME 
+and  ME_CONFIG_MONGODB_ADMINPASSWORD.
 
 ```bash
 apiVersion: apps/v1
@@ -224,8 +224,8 @@ minikube service webapp-service
 
 This will open the Mongo-Express app in your browser.The webpage will prompt for a username and password because we have used the latest tag of the mongo-express image that comes a default username and password. The username and password is: admin and pass.
 
-![webpage](https://github.com/user-attachments/assets/6a6425f9-4ceb-4f30-8b26-6c13934d811d)
 
 ### Success 
 After successfully logging into Mongo-Express, you should see the web interface to manage your MongoDB instance. Congratulations, you've deployed a simple MERN application using Kubernetes!
 
+![webpage](https://github.com/user-attachments/assets/6a6425f9-4ceb-4f30-8b26-6c13934d811d)
